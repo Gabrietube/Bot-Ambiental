@@ -36,4 +36,11 @@ async def info(ctx):
         que normalmente no deberían estar en él y que 
         afectan el equilibrio del ecosistema.""")
 
+@bot.command()
+async def help(ctx):
+        await ctx.send("""Comandos: 
+        -$lista
+        -$afiche
+        -$info""")
+
 bot.run("TOKEN")
