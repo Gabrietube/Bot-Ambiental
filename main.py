@@ -29,4 +29,11 @@ async def afiche(ctx):
             picture = discord.File(f)
         await ctx.send(file=picture)
 
+@bot.command()
+async def info(ctx):
+        await ctx.send("""Hablamos de contaminación cuando 
+        en un entorno ingresan elementos o sustancias 
+        que normalmente no deberían estar en él y que 
+        afectan el equilibrio del ecosistema.""")
+
 bot.run("TOKEN")
